@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO Meta Tags -->
+  <meta name="description"
+    content="Portofolio Zaenal Anshori - Mahasiswa D3 Teknologi Multimedia Broadcasting PENS. Berpengalaman di bidang Web Development, Graphic Design, dan UI/UX Design." />
+  <meta name="keywords"
+    content="Zaenal Anshori, Portofolio, Web Developer, Graphic Designer, UI/UX Design, Front End, PENS" />
+  <meta name="author" content="Zaenal Anshori" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Zaenal Anshori | Portfolio" />
+  <meta property="og:description" content="Portofolio Zaenal Anshori - Web Developer & Graphic Designer." />
+  <meta property="og:image" content="Asset/home%201.png" />
+  <meta property="og:type" content="website" />
+
+  <!-- Box Icons -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="breakpoint.css" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="Asset/Logo1.png" />
+
+  <title>Zaenal Anshori | Portfolio</title>
+
+  <style>
+    /* Cursor glow (desktop pointer only) */
+    @media (pointer: fine) {
+      .cursor-glow {
+        position: fixed;
+        width: 320px;
+        height: 320px;
+        background: radial-gradient(circle, rgba(0, 251, 255, 0.055) 0%, transparent 65%);
+        border-radius: 50%;
+        pointer-events: none;
+        transform: translate(-50%, -50%);
+        transition: left .12s ease, top .12s ease;
+        z-index: 0;
+      }
+    }
+
+    /* Available badge */
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: .5rem;
+      padding: .4rem 1.1rem;
+      background: rgba(0, 251, 255, 0.08);
+      border: 1px solid rgba(0, 251, 255, 0.22);
+      border-radius: 100px;
+      font-size: .82rem;
+      color: var(--main-color);
+      letter-spacing: .05em;
+      margin-bottom: 1.4rem;
+    }
+
+    .hero-badge-dot {
+      width: 7px;
+      height: 7px;
+      background: var(--main-color);
+      border-radius: 50%;
+      box-shadow: 0 0 6px var(--main-color);
+      animation: badgePulse 2s ease-in-out infinite;
+      flex-shrink: 0;
+    }
+
+    @keyframes badgePulse {
+
+      0%,
+      100% {
+        opacity: 1;
+        transform: scale(1);
+      }
+
+      50% {
+        opacity: .45;
+        transform: scale(1.5);
+      }
+    }
+
+    /* Section sub-label */
+    .section-label {
+      font-size: .75rem;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      color: var(--main-color);
+      opacity: .7;
+      margin-bottom: .5rem;
+    }
+
+    /* Skill tags in About */
+    .skill-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .5rem;
+      margin: 1rem 0 2.5rem;
+    }
+
+    .skill-tag {
+      font-size: .78rem;
+      padding: .3rem .9rem;
+      background: rgba(0, 251, 255, 0.07);
+      border: 1px solid rgba(0, 251, 255, 0.18);
+      border-radius: 100px;
+      color: var(--main-color);
+      transition: all 0.3s ease;
+    }
+
+    .skill-tag:hover {
+      background: rgba(0, 251, 255, 0.16);
+      box-shadow: 0 0 12px rgba(0, 251, 255, 0.2);
+    }
+
+    /* Highlighted copyright name */
+    .footer-text p span {
+      color: var(--main-color);
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <!-- ================= HEADER ================= -->
+  <header class="header">
+
+    <a href="#" class="logo" style="display:flex;align-items:center;gap:.8rem;max-width:280px;text-decoration:none;">
+      <img src="Asset/Logo1.png" alt="ZA projects logo"
+        style="height:2.5rem;width:auto;filter:drop-shadow(0 0 8px rgba(0,251,255,0.4));">
+      <div style="overflow:hidden;white-space:nowrap;width:170px;">
+        <div style="display:inline-block;animation:marquee 6s linear infinite;font-size:1.4rem;letter-spacing:2px;">
+          <span style="font-weight:800;color:transparent;-webkit-text-stroke:1px var(--text-color);">ZA</span>
+          <span style="font-weight:800;color:var(--main-color);text-shadow:0 0 15px var(--main-color);">PROJECTS</span>
+        </div>
+      </div>
+    </a>
+
+    <i class='bx bx-menu' id="menu-icon"></i>
+
+    <nav class="navbar">
+      <a href="#home" class="active">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+  </header>
+
+  <!-- ================= HOME ================= -->
+  <section class="home" id="home">
+
+    <div class="home-content">
+
+      <div class="hero-badge">
+        <div class="hero-badge-dot"></div>
+        Available for freelance &amp; collaboration
+      </div>
+
+      <h3>Hello, It's Me</h3>
+      <h1>Zaenal Anshori</h1>
+      <h3>And I'm a <span class="multiple-text"></span></h3>
+
+      <p>
+        Mahasiswa Teknologi Multimedia Broadcasting PENS yang memiliki
+        minat di bidang web development, graphic design, dan media digital.
+      </p>
+
+      <div class="social-media">
+        <a href="https://github.com/ZaenalAnshori-5124521021" target="_blank" title="GitHub">
+          <i class='bx bxl-github'></i>
+        </a>
+        <a href="https://www.instagram.com/_znlans/" target="_blank" title="Instagram">
+          <i class='bx bxl-instagram-alt'></i>
+        </a>
+        <a href="https://www.linkedin.com/in/zaenal-anshori-13184b371/" target="_blank" title="LinkedIn">
+          <i class='bx bxl-linkedin'></i>
+        </a>
+      </div>
+
+      <a href="Asset/CV Zaenal Anshori.pdf" class="btn" download>
+        <i class='bx bx-download' style="margin-right:.4rem;vertical-align:middle;"></i>
+        Download CV
+      </a>
+
+    </div>
+
+    <div class="home-img">
+      <img src="Asset/home 1.png" alt="home image">
+    </div>
+
+  </section>
+
+  <!-- ================= ABOUT ================= -->
+  <section class="about" id="about">
+
+    <div class="about-img">
+      <img src="Asset/about.png" alt="about image">
+    </div>
+
+    <div class="about-content">
+
+      <span class="section-label">— Who I Am</span>
+      <h2 class="heading">About <span>Me</span></h2>
+
+      <p>
+        Halo! Saya Zaenal Anshori, mahasiswa D3 Teknologi Multimedia
+        Broadcasting di Politeknik Elektronika Negeri Surabaya (PENS).
+        Saya memiliki ketertarikan pada dunia desain grafis,
+        pengembangan website, dan media digital kreatif.
+      </p>
+      <p>
+        Saya memiliki pengalaman dalam membuat desain poster, banner,
+        konten media sosial, serta tampilan website yang modern dan
+        responsif menggunakan HTML, CSS, JavaScript, dan jQuery.
+      </p>
+      <p>
+        Selain itu, saya juga mengembangkan project website
+        Sistem Informasi Keuangan Masjid (SIKEMAS)
+        sebagai media pengelolaan data keuangan masjid secara digital.
+      </p>
+
+      <!-- Skill tags -->
+      <div class="skill-tags">
+        <span class="skill-tag">HTML / CSS</span>
+        <span class="skill-tag">JavaScript</span>
+        <span class="skill-tag">PHP</span>
+        <span class="skill-tag">jQuery</span>
+        <span class="skill-tag">Figma</span>
+        <span class="skill-tag">CorelDRAW</span>
+        <span class="skill-tag">Illustrator</span>
+        <span class="skill-tag">Canva</span>
+      </div>
+
+      <a href="#" class="btn">Read More</a>
+
+    </div>
+
+  </section>
+
+  <!-- ================= SERVICES ================= -->
+  <section class="services" id="services">
+
+    <span class="section-label" style="display:block;text-align:center;">— What I Offer</span>
+    <h2 class="heading">My <span>Services</span></h2>
+
+    <div class="services-container">
+
+      <div class="services-box">
+        <i class='bx bx-code-alt'></i>
+        <h3>Web Development</h3>
+        <p>
+          Membuat tampilan website responsif menggunakan
+          HTML, CSS, JavaScript, dan jQuery dengan desain modern
+          dan user friendly.
+        </p>
+        <a href="#" class="btn">Read More</a>
+      </div>
+
+      <div class="services-box">
+        <i class='bx bx-palette'></i>
+        <h3>Graphic Design</h3>
+        <p>
+          Mendesain poster, banner, brosur, dan media promosi
+          menggunakan CorelDRAW, Adobe Illustrator, dan Figma.
+        </p>
+        <a href="#" class="btn">Read More</a>
+      </div>
+
+      <div class="services-box">
+        <i class='bx bx-devices'></i>
+        <h3>UI/UX Design</h3>
+        <p>
+          Mendesain tampilan antarmuka website yang modern,
+          interaktif, dan nyaman digunakan pengguna.
+        </p>
+        <a href="#" class="btn">Read More</a>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ================= PORTFOLIO ================= -->
+  <section class="portfolio" id="portfolio">
+
+    <span class="section-label" style="display:block;text-align:center;">— My Work</span>
+    <h2 class="heading">Latest <span>Projects</span></h2>
+
+    <div class="portfolio-container">
+
+      <div class="portfolio-box">
+        <img src="Asset/sikemas.jpg" alt="SIKEMAS">
+        <div class="portfolio-layer">
+          <h4>SIKEMAS Website</h4>
+          <p>
+            Sistem Informasi Keuangan Masjid berbasis web
+            untuk membantu pengelolaan data pemasukan,
+            pengeluaran, dan laporan keuangan masjid.
+          </p>
+          <p class="tech">HTML • CSS • JavaScript • PHP • MySQL</p>
+          <a href="#"><i class='bx bx-link-external'></i></a>
+        </div>
+      </div>
+
+      <div class="portfolio-box">
+        <img src="Asset/design.jpg" alt="Graphic Design">
+        <div class="portfolio-layer">
+          <h4>Poster & Banner Design</h4>
+          <p>
+            Membuat berbagai desain kreatif seperti poster,
+            banner, brosur, dan media promosi digital.
+          </p>
+          <p class="tech">CorelDRAW • Adobe Illustrator • Canva • Figma</p>
+          <a href="#"><i class='bx bx-link-external'></i></a>
+        </div>
+      </div>
+
+      <div class="portfolio-box">
+        <img src="Asset/carnival.jpg" alt="Event Design">
+        <div class="portfolio-layer">
+          <h4>Event & Carnival Design</h4>
+          <p>
+            Freelance desain untuk berbagai kebutuhan event dan karnaval
+            seperti banner, poster, backdrop, dan media promosi acara.
+          </p>
+          <p class="tech">CorelDRAW • Adobe Illustrator • Canva • Figma</p>
+          <a href="#"><i class='bx bx-link-external'></i></a>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ================= CONTACT ================= -->
+  <section class="contact" id="contact">
+
+    <span class="section-label" style="display:block;text-align:center;">— Get In Touch</span>
+    <h2 class="heading">Contact <span>Me</span></h2>
+
+    <form action="https://api.web3forms.com/submit" method="POST">
+
+      <input type="hidden" name="access_key" value="c7f276c0-1bf2-4df9-843e-c1a55030796d">
+
+      <div class="input-box">
+        <input type="text" name="name" placeholder="Full Name" required>
+        <input type="email" name="email" placeholder="Email Address" required>
+      </div>
+
+      <div class="input-box">
+        <input type="number" name="phone" placeholder="Mobile Number">
+        <input type="text" name="subject" placeholder="Email Subject" required>
+      </div>
+
+      <textarea name="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+
+      <input type="submit" value="Send Message" class="btn">
+
+    </form>
+
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer" style="justify-content:center;position:relative;">
+
+    <div class="footer-text">
+      <p>
+        Copyright &copy; 2026 by <span>ZA Projects</span> |
+        All Rights Reserved.
+      </p>
+    </div>
+
+    <div class="footer-iconTop" style="position:absolute;right:9%;">
+      <a href="#home" title="Back to top">
+        <i class='bx bx-up-arrow-alt'></i>
+      </a>
+    </div>
+
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script type="module" src="/main.js"></script>
+
+  <script>
+    // Cursor glow
+    const glow = document.getElementById('cursorGlow');
+    if (glow && window.matchMedia('(pointer: fine)').matches) {
+      document.addEventListener('mousemove', e => {
+        glow.style.left = e.clientX + 'px';
+        glow.style.top = e.clientY + 'px';
+      });
+    }
+  </script>
+
+</body>
+
+</html>

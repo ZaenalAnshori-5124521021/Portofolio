@@ -1,0 +1,10 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Import existing custom styles so they are processed by PostCSS/Tailwind */
+@import url('../style.css');
+@import url('../breakpoint.css');
+
+/* You can add component-specific utilities or custom Tailwind layers below */
