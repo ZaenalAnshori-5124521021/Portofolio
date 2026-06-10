@@ -515,8 +515,8 @@ span {
   height: 100%;
   background: linear-gradient(
     to top,
-    rgba(26, 31, 43, 0.97) 0%,
-    rgba(0, 251, 255, 0.55) 100%
+    rgba(26, 31, 43, 0.92) 0%,
+    rgba(0, 251, 255, 0.18) 100%
   );
   display: flex;
   justify-content: center;
@@ -524,12 +524,17 @@ span {
   text-align: center;
   flex-direction: column;
   padding: 0 2.5rem;
-  transform: translateY(100%);
-  transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+  opacity: 1;
+  transform: translateY(0);
+  transition: background 0.5s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .portfolio-box:hover .portfolio-layer {
-  transform: translateY(0);
+  background: linear-gradient(
+    to top,
+    rgba(26, 31, 43, 0.97) 0%,
+    rgba(0, 251, 255, 0.55) 100%
+  );
 }
 
 .portfolio-layer h4 {
